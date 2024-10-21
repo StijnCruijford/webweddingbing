@@ -1,0 +1,128 @@
+/* Default CSS untuk layar besar */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Tinggi layar penuh */
+    background-image: url('bendaituhijau.jpg');
+    background-size: cover; /* Untuk memastikan gambar latar menutupi layar */
+}
+
+.background-container {
+    background: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+header {
+    background-color: #5A9;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+h1 {
+    font-size: 3em;
+    margin-bottom: 0;
+}
+
+h2 {
+    margin-top: 10px;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    color: #5A9;
+}
+
+.photo {
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+#rsvp-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#rsvp-form label,
+#rsvp-form input,
+#rsvp-form select {
+    margin: 10px 0;
+}
+
+button {
+    background-color: #5A9;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #488;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Responsif untuk layar tablet dan ponsel */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    header {
+        padding: 10px 0;
+    }
+
+    section {
+        margin: 10px;
+        padding: 10px;
+    }
+
+    .photo {
+        max-width: 200px;
+    }
+
+    button {
+        padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    section {
+        margin: 5px;
+        padding: 5px;
+    }
+
+    .photo {
+        max-width: 150px;
+    }
+
+    button {
+        padding: 6px;
+        font-size: 0.9em;
+    }
+}
